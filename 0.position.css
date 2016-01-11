@@ -1,0 +1,64 @@
+/* Reset CSS*/
+*{ padding:0px; margin:0px;}
+
+.other{ border:1px dashed red; margin:5px;}
+.parent{ border:5px solid blue; margin:5px;}
+.me{ background-color:black; color:white;}
+.me1{ background-color:black; color:white;}
+
+.me{
+    position: static;   /*1.static-디폴드 값으로 속성 값이 미설정일때.
+                              밑에 주는 속성과 값들은 미반영됨. */
+    top:10px;
+    left:50px;
+}
+
+.me{
+    position: fixed;   /*2.fixed-부모 엘리먼트를 무시함.
+                                  독자적으로 위치함.
+                                  문서전체를 기준으로 위치함.
+                                  스크롤될때 다른 엘리먼트에 따라가지 않고
+                                  화면기준으로 그 자리에 고정됨.
+                                  특정위치를 고정함.
+                            */
+    top:300px;
+    left:50px;
+}
+
+.me{
+      position: relative;   /*3.relative-부모 엘리먼트 기준으로 위치함.
+                                        부모 엘리먼트 영역을 상속 받음.
+                            */
+      top:50px;
+      left:150px;
+  }
+
+.me{
+    position: absolute;   /*4.absolute-부모 엘리먼트를 무시함.
+                                      독자적으로 위치함.
+                                      문서전체 기준으로 위치함.
+                                      스크롤될 때 다른 엘리먼트와 함께
+                                      따라 올라감.
+                            */
+    top:300px;
+    left:50px;
+}
+.pos_fixed{
+    position: fixed;
+    top: 30px;
+    right: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
